@@ -7,11 +7,11 @@ export default function usePhotos(){
     const {
         user: {uid: userId = ''}
     } = useContext(UserContext)
-    console.log('userId', userId);
 
     useEffect(()=>{
         async function getTimeLinePhotos(){
             const [{following}] = await getUserByUserId(userId)
+            console.log('following', following);
             let followedUserPhotos = []
 
             if(following.length > 0){

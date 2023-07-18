@@ -86,7 +86,7 @@ export async function getPhotos(userId, following){
         .firestore()
         .collection('photos')
         .where('userId', 'in', following)
-        .get()
+        .get()  
 
     const userFollowedPhotos = result.docs.map((photo)=>({
         ...photo.data(),
@@ -105,6 +105,7 @@ export async function getPhotos(userId, following){
             return {username, ...photo, userLikedPhoto}
         })
     )
+    console.log('photosWithUserDetails', photosWithUserDetails);
     return photosWithUserDetails
 }
 

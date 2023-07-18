@@ -14,7 +14,7 @@ export default function Photos({ photos }){
                         className='relative group'>
                             <img src={photo.imageSrc} alt={photo.caption} />
 
-                            <div className='absolute bottom-0 left-0 bg-gray-200 z-10 w-full justify-evenly items-center h-full bg-black-faded group-hover:flex hidden'>
+                            <div className='absolute bottom-0 left-0 bg-gray-200 z-10 w-full justify-evenly items-center h-full hidden group-hover:flex'>
                                 <p className='flex item-center text-white font-bold'>
                                     <svg
                                         xmlns="http://www.w3.org/2000/svg"

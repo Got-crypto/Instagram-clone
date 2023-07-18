@@ -41,6 +41,7 @@ function Signup() {
                         followers: [],
                         dateCreated: Date.now()
                     })
+                    console.log("user created");
                     history.push(ROUTES.DASHBOARD)
 
             } catch (error){

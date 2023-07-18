@@ -15,7 +15,7 @@ export default function Post({content}){
                     src={content.imageSrc} 
                     caption={content.caption}
                 />
-                {console.log('imgSrc',content.imgSrc)}
+                {console.log('imgSrc',content.imageSrc)}
                 <Actions 
                     docId={content.docId} 
                     totalLikes={content.likes.length} 
